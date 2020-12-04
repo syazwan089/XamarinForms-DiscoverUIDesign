@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:UIHowTo"
+             x:Class="UIHowTo.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <Label Text="Discover" TextColor="Black" FontSize="24" FontAttributes="Bold" Margin="15"/>
+
+
+
+        <CarouselView ItemsSource="{Binding places}" HeightRequest="300" PeekAreaInsets="110">
+            
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+
+                    <StackLayout>
+                              <Frame HeightRequest="280" WidthRequest="180" 
+               
+                           BackgroundColor="White" Padding="0"
+                           HasShadow="True" Margin="10" CornerRadius="10"
+                           HorizontalOptions="CenterAndExpand">
+                        <Grid>
+                            <StackLayout  BackgroundColor="Black">
+                                <Image Source="{Binding imgSource}" 
+                                    HeightRequest="350" Opacity="0.6"
+                                    Aspect="AspectFill"/>
+                            </StackLayout>
+                            <StackLayout Margin="0,0,0,10">
+
+                                <Image Source="https://images.vexels.com/media/users/3/147081/isolated/preview/8665e39f2880934120b3c37131210042-instagram-bookmark-icon-by-vexels.png" 
+                               HeightRequest="50"
+                               Aspect="AspectFit" HorizontalOptions="EndAndExpand" Margin="10,0"/>
+                                <Label Text="{Binding title}" TextColor="White" FontSize="18"
+                           FontAttributes="None" Margin="15,0"
+                           VerticalOptions="EndAndExpand"/>
+
+                                <StackLayout Orientation="Horizontal"  Margin="15,-8,0,0">
+                                    <Image Source="https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png" 
+                               HeightRequest="20"  Margin="-5,0"
+                               Aspect="AspectFit"/>
+                                    <Label Text="{Binding country}" TextColor="White" FontSize="14"
+                           FontAttributes="None" 
+                           VerticalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+
+
+
+                    </Frame>
+                    </StackLayout>
+              
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        
+    
+        
+          
+      
+    </StackLayout>
+
+</ContentPage>

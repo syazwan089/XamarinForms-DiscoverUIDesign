@@ -1,0 +1,14 @@
+D:\XamarinForms\UIHowTo\UIHowTo\bin\Debug\netstandard2.0\UIHowTo.deps.json
+D:\XamarinForms\UIHowTo\UIHowTo\bin\Debug\netstandard2.0\UIHowTo.dll
+D:\XamarinForms\UIHowTo\UIHowTo\bin\Debug\netstandard2.0\ref\UIHowTo.dll
+D:\XamarinForms\UIHowTo\UIHowTo\bin\Debug\netstandard2.0\UIHowTo.pdb
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\UIHowTo.csprojAssemblyReference.cache
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\UIHowTo.AssemblyInfoInputs.cache
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\UIHowTo.AssemblyInfo.cs
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\UIHowTo.csproj.CoreCompileInputs.cache
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\XamlC.stamp
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\UIHowTo.dll
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\ref\UIHowTo.dll
+D:\XamarinForms\UIHowTo\UIHowTo\obj\Debug\netstandard2.0\UIHowTo.pdb
