@@ -1,14 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "NwiLgY0P5YJZvbgjkmapxflB2PufDjqPC6r39sd60bSQW8u94CpNSsupeN+zZ4wO01V/2Dklv3KrHyVjC7AETw==",
+  "dgSpecHash": "Pe21ershn2wZYYWnfzbOJa7AJsWOKTW3tbWyYQQB/Y904o07uKdcFyBenbNUXEn8aVnwhO4QgWS9MKHvT7XoKA==",
   "success": true,
-  "projectFilePath": "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj",
+  "projectFilePath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\syazw\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\syazw\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\syazw\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\syazw\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\syazw\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\syazw\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\syazw\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\syazw\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Users\\syazw\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\syazw\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []
 }

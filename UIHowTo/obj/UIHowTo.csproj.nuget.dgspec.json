@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj": {}
+    "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj": {}
   },
   "projects": {
-    "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj": {
+    "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj",
+        "projectUniqueName": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj",
         "projectName": "UIHowTo",
-        "projectPath": "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj",
+        "projectPath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj",
         "packagesPath": "C:\\Users\\syazw\\.nuget\\packages\\",
-        "outputPath": "D:\\XamarinForms\\UIHowTo\\UIHowTo\\obj\\",
+        "outputPath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -57,6 +57,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.759, )"
             }
           },
           "imports": [
@@ -69,7 +73,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

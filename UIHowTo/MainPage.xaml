@@ -56,11 +56,37 @@
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
-        
-    
-        
-          
-      
+
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Feeling adventurous?" TextColor="Black" FontSize="24" FontAttributes="Bold" Margin="15"/>
+            <Label HorizontalOptions="EndAndExpand" Text="Show all" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="15"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+            <StackLayout Margin="5" WidthRequest="100">
+                <ImageButton  HorizontalOptions="Center"  Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" />
+                <Label HorizontalOptions="Center" Text="Kayak" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+
+            </StackLayout>
+            <StackLayout  Margin="5" WidthRequest="100">
+                <ImageButton  HorizontalOptions="Center"  Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" />
+                <Label HorizontalOptions="Center" Text="Baloon" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+
+            </StackLayout>
+            <StackLayout  Margin="5" WidthRequest="100">
+                <ImageButton  HorizontalOptions="Center"  Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" />
+                <Label HorizontalOptions="Center" Text="Hiking" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+
+            </StackLayout>
+            <StackLayout  Margin="5" WidthRequest="100">
+                <ImageButton  HorizontalOptions="Center"  Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" />
+                <Label HorizontalOptions="Center" Text="Running" TextColor="Gray" FontSize="18" FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+
+            </StackLayout>
+        </StackLayout>
+
+
     </StackLayout>
 
 </ContentPage>

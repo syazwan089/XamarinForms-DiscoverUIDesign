@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="UIHowTo.DetailPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Grid>
+
+                    <Frame Padding="0" HeightRequest="450" BackgroundColor="Black">
+                        <Image Opacity="0.7" Source="https://images.pexels.com/photos/6023784/pexels-photo-6023784.jpeg" Aspect="AspectFill"/>
+                    </Frame>
+                    <StackLayout VerticalOptions="EndAndExpand" Margin="15,15,15,85">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Breathtaking of the Malaysia's ocean" Grid.Column="0" TextColor="White" FontSize="28" FontAttributes="None"/>
+                            <StackLayout Grid.Column="1">
+                                <Label Text="5.0" HorizontalOptions="Center" Grid.Column="0" TextColor="White" FontSize="28" FontAttributes="None"/>
+                                <Label Text="100 review" Grid.Column="0" TextColor="LightGray" FontSize="18" FontAttributes="None"/>
+                            </StackLayout>
+                        </Grid>
+                        
+                    </StackLayout>
+                </Grid>
+
+                <Grid  VerticalOptions="FillAndExpand" Margin="0,-30,0,0" Padding="0">
+                    <Frame CornerRadius="25">
+                                
+                    </Frame>
+                    <pancake:PancakeView CornerRadius="50" BackgroundColor="White"  Margin="15,-45,20,15" HeightRequest="80" WidthRequest="80" Padding="5" 
+                           HorizontalOptions="EndAndExpand" 
+                           VerticalOptions="Start">
+                        <pancake:PancakeView.Shadow>
+                            <pancake:DropShadow Color="Black" BlurRadius="15" Offset="0,0"/>
+                        </pancake:PancakeView.Shadow>
+                        <Image Source="https://www.searchpng.com/wp-content/uploads/2019/02/Save-Icon.png" Aspect="AspectFit" Margin="15"/>
+
+                    </pancake:PancakeView>
+                </Grid>
+
+               
+
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

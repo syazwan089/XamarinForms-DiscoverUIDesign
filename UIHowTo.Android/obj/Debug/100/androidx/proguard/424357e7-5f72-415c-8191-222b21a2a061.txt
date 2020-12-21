@@ -1,0 +1,4 @@
+-keep public class * extends androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.v4.graphics.drawable.IconCompatParcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl

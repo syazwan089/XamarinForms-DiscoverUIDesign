@@ -10,7 +10,7 @@ namespace UIHowTo
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new DetailPage();
         }
 
         protected override void OnStart()

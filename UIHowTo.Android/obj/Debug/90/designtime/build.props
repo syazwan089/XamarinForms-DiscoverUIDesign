@@ -24,7 +24,7 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=637427103763871031
+_nugetassetstimestamp=637441811020185910
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a

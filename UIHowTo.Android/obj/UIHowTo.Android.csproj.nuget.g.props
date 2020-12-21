@@ -16,6 +16,7 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xamarin.androidx.migration\1.0.7.1\buildTransitive\monoandroid90\Xamarin.AndroidX.Migration.props" Condition="Exists('$(NuGetPackageRoot)xamarin.androidx.migration\1.0.7.1\buildTransitive\monoandroid90\Xamarin.AndroidX.Migration.props')" />
     <Import Project="$(NuGetPackageRoot)xamarin.forms\4.8.0.1451\buildTransitive\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\4.8.0.1451\buildTransitive\Xamarin.Forms.props')" />
   </ImportGroup>
 </Project>

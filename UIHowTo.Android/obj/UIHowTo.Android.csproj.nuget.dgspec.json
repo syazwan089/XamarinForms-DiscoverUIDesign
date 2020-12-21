@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\XamarinForms\\UIHowTo\\UIHowTo.Android\\UIHowTo.Android.csproj": {}
+    "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo.Android\\UIHowTo.Android.csproj": {}
   },
   "projects": {
-    "D:\\XamarinForms\\UIHowTo\\UIHowTo.Android\\UIHowTo.Android.csproj": {
+    "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo.Android\\UIHowTo.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\XamarinForms\\UIHowTo\\UIHowTo.Android\\UIHowTo.Android.csproj",
+        "projectUniqueName": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo.Android\\UIHowTo.Android.csproj",
         "projectName": "UIHowTo.Android",
-        "projectPath": "D:\\XamarinForms\\UIHowTo\\UIHowTo.Android\\UIHowTo.Android.csproj",
+        "projectPath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo.Android\\UIHowTo.Android.csproj",
         "packagesPath": "C:\\Users\\syazw\\.nuget\\packages\\",
-        "outputPath": "D:\\XamarinForms\\UIHowTo\\UIHowTo.Android\\obj\\",
+        "outputPath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -23,25 +23,29 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid90"
+          "monoandroid10.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid90": {
+          "monoandroid10.0": {
             "projectReferences": {
-              "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj": {
-                "projectPath": "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj"
+              "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj": {
+                "projectPath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj"
               }
             }
           }
         }
       },
       "frameworks": {
-        "monoandroid90": {
+        "monoandroid10.0": {
           "dependencies": {
+            "Xamarin.Android.Support.Compat": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.5.3.2, )"
@@ -49,19 +53,23 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.759, )"
             }
           }
         }
       }
     },
-    "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj": {
+    "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj",
+        "projectUniqueName": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj",
         "projectName": "UIHowTo",
-        "projectPath": "D:\\XamarinForms\\UIHowTo\\UIHowTo\\UIHowTo.csproj",
+        "projectPath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\UIHowTo.csproj",
         "packagesPath": "C:\\Users\\syazw\\.nuget\\packages\\",
-        "outputPath": "D:\\XamarinForms\\UIHowTo\\UIHowTo\\obj\\",
+        "outputPath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -107,6 +115,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.8.0.1451, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.759, )"
             }
           },
           "imports": [
@@ -119,7 +131,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
