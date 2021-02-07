@@ -13,6 +13,7 @@ public class Platform_DefaultRenderer
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_dispatchTouchEvent:(Landroid/view/MotionEvent;)Z:GetDispatchTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_setOnTouchListener:(Landroid/view/View$OnTouchListener;)V:GetSetOnTouchListener_Landroid_view_View_OnTouchListener_Handler\n" +
+			"n_onMeasure:(II)V:GetOnMeasure_IIHandler\n" +
 			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"";
 		mono.android.Runtime.register ("Xamarin.Forms.Platform.Android.Platform+DefaultRenderer, Xamarin.Forms.Platform.Android", Platform_DefaultRenderer.class, __md_methods);
@@ -65,6 +66,14 @@ public class Platform_DefaultRenderer
 	}
 
 	private native void n_setOnTouchListener (android.view.View.OnTouchListener p0);
+
+
+	public void onMeasure (int p0, int p1)
+	{
+		n_onMeasure (p0, p1);
+	}
+
+	private native void n_onMeasure (int p0, int p1);
 
 
 	public void onLayout (boolean p0, int p1, int p2, int p3, int p4)

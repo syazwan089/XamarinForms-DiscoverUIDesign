@@ -10,7 +10,6 @@ public class SwipeViewRenderer
 	public static final String __md_methods;
 	static {
 		__md_methods = 
-			"n_onLayout:(ZIIII)V:GetOnLayout_ZIIIIHandler\n" +
 			"n_onAttachedToWindow:()V:GetOnAttachedToWindowHandler\n" +
 			"n_onTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnTouchEvent_Landroid_view_MotionEvent_Handler\n" +
 			"n_onInterceptTouchEvent:(Landroid/view/MotionEvent;)Z:GetOnInterceptTouchEvent_Landroid_view_MotionEvent_Handler\n" +
@@ -42,14 +41,6 @@ public class SwipeViewRenderer
 		if (getClass () == SwipeViewRenderer.class)
 			mono.android.TypeManager.Activate ("Xamarin.Forms.Platform.Android.SwipeViewRenderer, Xamarin.Forms.Platform.Android", "Android.Content.Context, Mono.Android", this, new java.lang.Object[] { p0 });
 	}
-
-
-	public void onLayout (boolean p0, int p1, int p2, int p3, int p4)
-	{
-		n_onLayout (p0, p1, p2, p3, p4);
-	}
-
-	private native void n_onLayout (boolean p0, int p1, int p2, int p3, int p4);
 
 
 	public void onAttachedToWindow ()

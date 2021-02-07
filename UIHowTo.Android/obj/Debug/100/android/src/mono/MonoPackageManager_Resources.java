@@ -53,6 +53,8 @@ public class MonoPackageManager_Resources {
 		"Xamarin.AndroidX.VectorDrawable.dll",
 		"Xamarin.AndroidX.VersionedParcelable.dll",
 		"Xamarin.AndroidX.ViewPager.dll",
+		"Xamarin.AndroidX.ViewPager2.dll",
+		"Xamarin.CommunityToolkit.dll",
 		"Xamarin.Essentials.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.PancakeView.dll",
@@ -60,6 +62,7 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
 		"Xamarin.Google.Android.Material.dll",
+		"Xamarin.Google.Guava.ListenableFuture.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

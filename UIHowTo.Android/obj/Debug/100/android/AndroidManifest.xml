@@ -16,9 +16,11 @@
     <receiver android:name="crc64a0e0a82d0db9a07d.BatteryBroadcastReceiver" android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" />
     <receiver android:name="crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver" android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" />
     <receiver android:name="crc64a0e0a82d0db9a07d.ConnectivityBroadcastReceiver" android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" />
+    <activity android:name="crc64a0e0a82d0db9a07d.IntermediateActivity" android:configChanges="orientation|screenSize" />
     <provider android:name="xamarin.essentials.fileProvider" android:authorities="com.companyname.uihowto.fileProvider" android:exported="false" android:grantUriPermissions="true">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xamarin_essentials_fileprovider_file_paths" />
     </provider>
+    <activity android:name="crc64a0e0a82d0db9a07d.WebAuthenticatorIntermediateActivity" android:configChanges="orientation|screenSize" />
     <receiver android:name="crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver" android:enabled="true" android:exported="false" />
     <provider android:name="mono.MonoRuntimeProvider" android:authorities="com.companyname.uihowto.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="1999999999" />
     <!-- suppress ExportedReceiver -->

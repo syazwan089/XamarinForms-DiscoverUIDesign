@@ -12,6 +12,7 @@ public class ShellFlyoutRecyclerAdapter
 		__md_methods = 
 			"n_getItemCount:()I:GetGetItemCountHandler\n" +
 			"n_getItemViewType:(I)I:GetGetItemViewType_IHandler\n" +
+			"n_onViewRecycled:(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;)V:GetOnViewRecycled_Landroidx_recyclerview_widget_RecyclerView_ViewHolder_Handler\n" +
 			"n_onBindViewHolder:(Landroidx/recyclerview/widget/RecyclerView$ViewHolder;I)V:GetOnBindViewHolder_Landroidx_recyclerview_widget_RecyclerView_ViewHolder_IHandler\n" +
 			"n_onCreateViewHolder:(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$ViewHolder;:GetOnCreateViewHolder_Landroid_view_ViewGroup_IHandler\n" +
 			"";
@@ -41,6 +42,14 @@ public class ShellFlyoutRecyclerAdapter
 	}
 
 	private native int n_getItemViewType (int p0);
+
+
+	public void onViewRecycled (androidx.recyclerview.widget.RecyclerView.ViewHolder p0)
+	{
+		n_onViewRecycled (p0);
+	}
+
+	private native void n_onViewRecycled (androidx.recyclerview.widget.RecyclerView.ViewHolder p0);
 
 
 	public void onBindViewHolder (androidx.recyclerview.widget.RecyclerView.ViewHolder p0, int p1)

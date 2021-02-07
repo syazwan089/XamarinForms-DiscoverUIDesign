@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "++BWsxDPhpGJBTLyLGDqY9+W3atDqCX8n2qhoQ+PKQTfXEbPH0zLwfxDapqs06B7VIdiDy+QvesQcsRF7E7OfQ==",
+  "dgSpecHash": "6Anby/eeXjBH0S186sVuFC+BNW3r87Qb3y+rkM7fPdtVCyeMFY/KT7pmnmE4q5xEumRMtnZ63ziMMrFWyGOdLQ==",
   "success": true,
   "projectFilePath": "D:\\ClearVisionStudio\\Xamarin-Tutorial\\GitHub\\XamarinForms-DiscoverUIDesign\\UIHowTo.iOS\\UIHowTo.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\syazw\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
-    "C:\\Users\\syazw\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\syazw\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\syazw\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\syazw\\.nuget\\packages\\xamarin.communitytoolkit\\1.0.2\\xamarin.communitytoolkit.1.0.2.nupkg.sha512",
+    "C:\\Users\\syazw\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Users\\syazw\\.nuget\\packages\\xamarin.forms\\5.0.0.1931\\xamarin.forms.5.0.0.1931.nupkg.sha512",
     "C:\\Users\\syazw\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
   ],
   "logs": []

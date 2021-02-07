@@ -2,7 +2,57 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:pancake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:xyt="http://xamarin.com/schemas/2020/toolkit"
              x:Class="UIHowTo.DetailPage">
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+
+            <ControlTemplate x:Key="CustomTab">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+
+
+                    <Label Text="{TemplateBinding Text}"  HorizontalOptions="CenterAndExpand"  
+                           VerticalOptions="CenterAndExpand" Grid.Row="0" TextColor="{TemplateBinding CurrentTextColor}"/>
+                    <BoxView Color="Orange" HeightRequest="10" WidthRequest="10"  Grid.Row="1"
+                             HorizontalOptions="CenterAndExpand"  VerticalOptions="CenterAndExpand"
+                             CornerRadius="30"  IsVisible="{TemplateBinding IsSelected}"/>
+
+                </Grid>
+            </ControlTemplate>
+
+
+            <Style
+		        x:Key="CustomTabStyle"
+		        TargetType="xyt:TabView">
+                <Setter
+			        Property="IsTabTransitionEnabled"
+			        Value="True" />
+                <Setter
+			        Property="TabStripHeight"
+			        Value="48" />
+                <Setter
+			        Property="TabContentBackgroundColor"
+			        Value="#484848" />
+                <Setter
+			        Property="TabStripPlacement"
+			        Value="Top" />
+            </Style>
+
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ContentPage.Content>
         <Grid>
             <StackLayout VerticalOptions="FillAndExpand">
@@ -29,7 +79,140 @@
 
                 <Grid  VerticalOptions="FillAndExpand" Margin="0,-30,0,0" Padding="0">
                     <Frame CornerRadius="25">
-                                
+
+                        <Grid>
+                            <xyt:TabView Style="{StaticResource CustomTabStyle}">
+                                <xyt:TabViewItem 
+                                    ControlTemplate="{StaticResource CustomTab}"
+                                    Text="Overview" TextColorSelected="Orange"
+                                    >
+
+                                    <StackLayout BackgroundColor="White">
+                                               <Grid BackgroundColor="White">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                     
+
+                                        <StackLayout Grid.Column="0" HeightRequest="65" 
+                                                     VerticalOptions="Start" 
+                                                     >
+
+                                            <Grid BackgroundColor="White">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+
+                                                <StackLayout Grid.Column="0" Grid.RowSpan="2" HeightRequest="100" 
+                                                     VerticalOptions="Start" 
+                                                    >
+                                                    <Image Source="price.png" Aspect="AspectFit" HeightRequest="40"
+                                                           VerticalOptions="CenterAndExpand"/>
+                                                </StackLayout>
+
+                                                <StackLayout Grid.Column="1" HeightRequest="100" 
+                                                     VerticalOptions="Start" 
+                                                     >
+
+                                                    <Label Text="PRICE" VerticalOptions="EndAndExpand" TextColor="DarkGray"
+                                                           FontAttributes="Bold"/>
+
+                                                </StackLayout>
+
+                                                <StackLayout Grid.Row="1" Grid.Column="1" HeightRequest="100" 
+                                                     VerticalOptions="Start" 
+                                                     >
+                                                    <StackLayout Orientation="Horizontal">
+                                                        <Label Text="from" VerticalOptions="EndAndExpand" TextColor="Black"
+                                                           FontAttributes="None"/>
+                                                        <Label Text="$50" VerticalOptions="EndAndExpand" FontSize="21" TextColor="Black"
+                                                           FontAttributes="Bold"/>
+                                                    </StackLayout>
+                                                </StackLayout>
+
+                                            </Grid>
+
+
+                                        </StackLayout>
+
+                                        <StackLayout Grid.Column="1" HeightRequest="65" 
+                                                     VerticalOptions="Start" 
+                                                     >
+
+                                            <Grid BackgroundColor="White">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+
+                                                <StackLayout Grid.Column="0" Grid.RowSpan="2" HeightRequest="100" 
+                                                     VerticalOptions="Start" 
+                                                    >
+                                                    <Image Source="price.png" Aspect="AspectFit" HeightRequest="40"
+                                                           VerticalOptions="CenterAndExpand"/>
+                                                </StackLayout>
+
+                                                <StackLayout Grid.Column="1" HeightRequest="100" 
+                                                     VerticalOptions="Start" 
+                                                     >
+
+                                                    <Label Text="DURATION" VerticalOptions="EndAndExpand" TextColor="DarkGray"
+                                                           FontAttributes="Bold"/>
+
+                                                </StackLayout>
+
+                                                <StackLayout Grid.Row="1" Grid.Column="1" HeightRequest="100" 
+                                                     VerticalOptions="Start" 
+                                                     >
+                                                  
+                                                        
+                                                        <Label Text="3 hours" VerticalOptions="EndAndExpand" FontSize="21" TextColor="Black"
+                                                           FontAttributes="Bold"/>
+                                                 
+                                                </StackLayout>
+
+                                            </Grid>
+
+
+                                        </StackLayout>
+                                        
+                                        
+                                    </Grid>
+
+
+                                        <StackLayout>
+                                            <Label Text="this is test label should be your description.this is test label should be your description.this is test label should be your description." 
+                                                   TextColor="Black" FontSize="16"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                             
+                                </xyt:TabViewItem>
+
+                                <xyt:TabViewItem
+                                    ControlTemplate="{StaticResource CustomTab}"
+                                    Text="Review" TextColorSelected="Orange"
+                                    >
+
+                                    <Grid BackgroundColor="Blue">
+
+                                    </Grid>
+                                </xyt:TabViewItem>
+
+                            </xyt:TabView>
+                        </Grid>
+                      
+                        
+                        
                     </Frame>
                     <pancake:PancakeView CornerRadius="50" BackgroundColor="White"  Margin="15,-45,20,15" HeightRequest="80" WidthRequest="80" Padding="5" 
                            HorizontalOptions="EndAndExpand" 
@@ -45,7 +228,14 @@
                
 
             </StackLayout>
-
+            <StackLayout  HeightRequest="65" VerticalOptions="EndAndExpand">
+                <pancake:PancakeView BackgroundColor="Orange" HeightRequest="65" Padding="0" CornerRadius="20,20,0,0"
+                                     VerticalOptions="EndAndExpand">
+                    <Label Text="Book now" FontSize="24" TextColor="White" FontAttributes="Bold" 
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="CenterAndExpand"/>
+                </pancake:PancakeView>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -10,8 +10,9 @@
       "UIHowTo/1.0.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3",
-          "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.CommunityToolkit": "1.0.2",
+          "Xamarin.Essentials": "1.6.1",
+          "Xamarin.Forms": "5.0.0.1931",
           "Xamarin.Forms.PancakeView": "2.3.0.759"
         },
         "runtime": {
@@ -44,13 +45,64 @@
           }
         }
       },
+      "System.Reflection.Emit.ILGeneration/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Reflection.Emit.ILGeneration.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
+      "System.Reflection.Emit.Lightweight/4.7.0": {
+        "dependencies": {
+          "System.Reflection.Emit.ILGeneration": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reflection.Emit.Lightweight.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        }
+      },
       "System.Runtime/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
-      "Xamarin.Essentials/1.5.3.2": {
+      "System.Runtime.CompilerServices.Unsafe/4.5.3": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.1",
+            "fileVersion": "4.6.28619.1"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {
+            "assemblyVersion": "4.2.0.1",
+            "fileVersion": "4.6.28619.1"
+          }
+        }
+      },
+      "Xamarin.CommunityToolkit/1.0.2": {
+        "dependencies": {
+          "System.Reflection.Emit.Lightweight": "4.7.0",
+          "System.Threading.Tasks.Extensions": "4.5.4",
+          "Xamarin.Forms": "5.0.0.1931"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.CommunityToolkit.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Essentials/1.6.1": {
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
         },
@@ -61,26 +113,26 @@
           }
         }
       },
-      "Xamarin.Forms/4.8.0.1451": {
+      "Xamarin.Forms/5.0.0.1931": {
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.372"
+            "fileVersion": "5.0.0.616"
           },
           "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.372"
+            "fileVersion": "5.0.0.616"
           },
           "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "4.8.0.372"
+            "fileVersion": "5.0.0.616"
           }
         }
       },
       "Xamarin.Forms.PancakeView/2.3.0.759": {
         "dependencies": {
           "System.ComponentModel": "4.3.0",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "5.0.0.1931"
         },
         "runtime": {
           "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll": {
@@ -132,6 +184,20 @@
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },
+    "System.Reflection.Emit.ILGeneration/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AucBYo3DSI0IDxdUjKksBcQJXPHyoPyrCXYURW1WDsLI4M65Ar/goSHjdnHOAY9MiYDNKqDlIgaYm+zL2hA1KA==",
+      "path": "system.reflection.emit.ilgeneration/4.7.0",
+      "hashPath": "system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512"
+    },
+    "System.Reflection.Emit.Lightweight/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a4OLB4IITxAXJeV74MDx49Oq2+PsF6Sml54XAFv+2RyWwtDBcabzoxiiJRhdhx+gaohLh4hEGCLQyBozXoQPqA==",
+      "path": "system.reflection.emit.lightweight/4.7.0",
+      "hashPath": "system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+    },
     "System.Runtime/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -139,19 +205,40 @@
       "path": "system.runtime/4.3.0",
       "hashPath": "system.runtime.4.3.0.nupkg.sha512"
     },
-    "Xamarin.Essentials/1.5.3.2": {
+    "System.Runtime.CompilerServices.Unsafe/4.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
-      "path": "xamarin.essentials/1.5.3.2",
-      "hashPath": "xamarin.essentials.1.5.3.2.nupkg.sha512"
+      "sha512": "sha512-3TIsJhD1EiiT0w2CcDMN/iSSwnNnsrnbzeVHSKkaEgV85txMprmuO+Yq2AdSbeVGcg28pdNDTPK87tJhX7VFHw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.3",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512"
     },
-    "Xamarin.Forms/4.8.0.1451": {
+    "System.Threading.Tasks.Extensions/4.5.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
-      "path": "xamarin.forms/4.8.0.1451",
-      "hashPath": "xamarin.forms.4.8.0.1451.nupkg.sha512"
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "Xamarin.CommunityToolkit/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P1vwT40rpeY66M1kpJyfO/yYuverdIuamN0w8FHgT4x+mcDf0G4tspCztMMYle1BSeisrtvOKToQMLDYfBz9uQ==",
+      "path": "xamarin.communitytoolkit/1.0.2",
+      "hashPath": "xamarin.communitytoolkit.1.0.2.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gG1Bp4j4bpJQ0dp9MeBJQJ9c8xULauIlhc7Cx5Qw4J2K1c+4Glq5n+gkb9Pm0UA/CevXVqLK5ZXmZkuYI52FgA==",
+      "path": "xamarin.essentials/1.6.1",
+      "hashPath": "xamarin.essentials.1.6.1.nupkg.sha512"
+    },
+    "Xamarin.Forms/5.0.0.1931": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5xe9Oxtx2lHC0pinXGRLoUMEav3qxdtNemDF1UxCcxHcwv/Zcso2LhYw1LnemYhtESa6QGOD8dGM31A2pmteVg==",
+      "path": "xamarin.forms/5.0.0.1931",
+      "hashPath": "xamarin.forms.5.0.0.1931.nupkg.sha512"
     },
     "Xamarin.Forms.PancakeView/2.3.0.759": {
       "type": "package",
